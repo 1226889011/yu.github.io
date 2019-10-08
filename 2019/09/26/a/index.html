@@ -6,13 +6,18 @@
   <meta name="keywords" content=" java基础 ">
   <meta name="description" content="int和Integer的区别 | Hexo">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
-<meta property="og:url" content="https://yuyujjff.club/archives/index.html">
+<meta name="description" content="java基础int与Integer的区别1、Integer是int的包装类，int则是java的一种基本数据类型 2、Integer变量必须实例化后才能使用，而int变量不需要 3、Integer实际上是对对象的引用，当new一个Integer时，实际上是生成了一个指针指向此对象；而int是直接存储数据值 4、Integer的默认值是null，int的默认值是0 关于Integer和int的比较1">
+<meta name="keywords" content="java基础">
+<meta property="og:type" content="article">
+<meta property="og:title" content="int和Integer的区别">
+<meta property="og:url" content="https://yuyujjff.club/2019/09/26/a/index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="java基础int与Integer的区别1、Integer是int的包装类，int则是java的一种基本数据类型 2、Integer变量必须实例化后才能使用，而int变量不需要 3、Integer实际上是对对象的引用，当new一个Integer时，实际上是生成了一个指针指向此对象；而int是直接存储数据值 4、Integer的默认值是null，int的默认值是0 关于Integer和int的比较1">
 <meta property="og:locale" content="en">
+<meta property="og:updated_time" content="2019-10-08T02:03:51.055Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hexo">
+<meta name="twitter:title" content="int和Integer的区别">
+<meta name="twitter:description" content="java基础int与Integer的区别1、Integer是int的包装类，int则是java的一种基本数据类型 2、Integer变量必须实例化后才能使用，而int变量不需要 3、Integer实际上是对对象的引用，当new一个Integer时，实际上是生成了一个指针指向此对象；而int是直接存储数据值 4、Integer的默认值是null，int的默认值是0 关于Integer和int的比较1">
 
 
 <link rel="icon" href="/img/avatar.jpg">
@@ -305,7 +310,7 @@
     </div>
     <div class="article-meta">
         
-        创建时间:<time class="date" title='更新时间: 2019-10-01 15:29:57'>2019-09-26 21:23</time>
+        创建时间:<time class="date" title='更新时间: 2019-10-08 10:03:51'>2019-09-26 21:23</time>
         
     </div>
     <div class="article-meta">
@@ -327,7 +332,7 @@
     
     <div class="toc-ref">
     
-        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#java基础"><span class="toc-text">java基础</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#int与Integer的区别"><span class="toc-text">int与Integer的区别</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#关于Integer和int的比较"><span class="toc-text">关于Integer和int的比较</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#java中基本数据类型和引用数据类型"><span class="toc-text">java中基本数据类型和引用数据类型</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#1、从概念方面来说"><span class="toc-text">1、从概念方面来说</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2、从内存构建方面来说"><span class="toc-text">2、从内存构建方面来说</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#3、从使用方面来说"><span class="toc-text">3、从使用方面来说</span></a></li></ol></li></ol></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#java基础"><span class="toc-text">java基础</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#int与Integer的区别"><span class="toc-text">int与Integer的区别</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#关于Integer和int的比较"><span class="toc-text">关于Integer和int的比较</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#java中基本数据类型和引用数据类型"><span class="toc-text">java中基本数据类型和引用数据类型</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#1、从概念方面来说"><span class="toc-text">1、从概念方面来说</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2、从内存构建方面来说"><span class="toc-text">2、从内存构建方面来说</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#3、从使用方面来说"><span class="toc-text">3、从使用方面来说</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#抽象类是什么"><span class="toc-text">抽象类是什么</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#接口是什么："><span class="toc-text">接口是什么：</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#接口和抽象类的区别："><span class="toc-text">接口和抽象类的区别：</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#接口和抽象类的相同点"><span class="toc-text">接口和抽象类的相同点</span></a></li></ol></li></ol>
     
 <style>
     .left-col .switch-btn,
@@ -357,6 +362,26 @@
 <p>​            引用数据类型：它以特殊的方式（类似C指针）指向对象（具体的值），这类变量声明时不会分配内存，只是存储了一个内存地址</p>
 <h4 id="3、从使用方面来说"><a href="#3、从使用方面来说" class="headerlink" title="3、从使用方面来说"></a>3、从使用方面来说</h4><p>​            基本数据类型：使用时需要赋予具体的值，判断用“==”号</p>
 <p>​            引用数据类型：使用时可以赋予null，判断时使用equals方法</p>
+<h3 id="抽象类是什么"><a href="#抽象类是什么" class="headerlink" title="抽象类是什么"></a>抽象类是什么</h3><p>抽象类不能创建实例，它只能作为父类被继承。抽象类是从多个具体类中抽象出来的父类，它具有更高层次的抽象。从多个具有相同特征的类中抽象出一个抽象类，以这个抽象类作为其子类的模板，从而避免了子类的随意性。</p>
+<p>（1）抽象方法只作声明，而不包含实现，可以看成是没有实现的虚方法</p>
+<p>（2）抽象类不能被实例化</p>
+<p>（3）抽象类可以但不是必须有抽象属性和抽象方法，但是一旦有了抽象方法，就一定要把这个类声明为抽象类</p>
+<p>（4）具体派生类必须覆盖基类的抽象方法</p>
+<p>（5）抽象派生类可以覆盖基类的抽象方法，也可以不覆盖。如果不覆盖，则其具体派生类必须覆盖它们</p>
+<h3 id="接口是什么："><a href="#接口是什么：" class="headerlink" title="接口是什么："></a>接口是什么：</h3><p>（1）接口不能被实例化</p>
+<p>（2）接口只能包含方法声明</p>
+<p>（3）接口的成员包括方法、属性、引索器、事件</p>
+<p>（4）接口中不能包含常量、字段、构造函数、析构函数、静态成员</p>
+<h3 id="接口和抽象类的区别："><a href="#接口和抽象类的区别：" class="headerlink" title="接口和抽象类的区别："></a>接口和抽象类的区别：</h3><p>（1）抽象类可以有构造方法，接口中不能有构造方法。</p>
+<p>（2）抽象类中可以有普通成员变量，接口中没有普通成员变量</p>
+<p>（3）抽象类中可以包含静态方法，接口中不能包含静态方法</p>
+<p>（4）一个类可以实现多个接口，但只能继承一个抽象类</p>
+<p>（5）接口可以被多重实现，抽象类只能被单一继承</p>
+<p>（6）如果抽象类实现接口，则可以把接口中的方法映射到抽象类中作为抽象方法而不必实现，而在抽象类的子类中实现接口中的方法</p>
+<h3 id="接口和抽象类的相同点"><a href="#接口和抽象类的相同点" class="headerlink" title="接口和抽象类的相同点"></a>接口和抽象类的相同点</h3><p>（1）都可以被继承</p>
+<p>（2）都不能被实例化</p>
+<p>（3）都可以包含方法的声明</p>
+<p>（4）派生类必须实现为实现的方法</p>
 
       
        <hr><span style="font-style: italic;color: gray;"> 转载请注明来源，欢迎对文章中的引用来源进行考证，欢迎指出任何有错误或不够清晰的表达。可以在下面评论区评论，也可以邮件至 jaytp@qq.com </span>
@@ -374,7 +399,7 @@
     
     <p><span class="copy-title">本文作者:</span><a href="javascript:void(0)" title="John Doe">John Doe</a></p>
     <p><span class="copy-title">发布时间:</span>2019-09-26, 21:23:27</p>
-    <p><span class="copy-title">最后更新:</span>2019-10-01, 15:29:57</p>
+    <p><span class="copy-title">最后更新:</span>2019-10-08, 10:03:51</p>
     <span class="copy-title">原始链接:</span><a class="post-url" href="/2019/09/26/a/" title="int和Integer的区别">https://yuyujjff.club/2019/09/26/a/</a>
     <p>
         <span class="copy-title">版权声明:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" title="CC BY-NC-SA 4.0 International" target = "_blank">"署名-非商用-相同方式共享 4.0"</a> 转载请保留原文链接及作者。
