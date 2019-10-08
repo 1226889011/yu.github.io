@@ -2,9 +2,9 @@
 <html>
 <head><meta name="generator" content="Hexo 3.9.0">
   <meta charset="utf-8">
-  <title>Hello World | Hexo</title>
-  <meta name="keywords" content>
-  <meta name="description" content="Hello World | Hexo">
+  <title>Nginx | Hexo</title>
+  <meta name="keywords" content=" 服务器 ">
+  <meta name="description" content="Nginx | Hexo">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <meta name="description" content="Nginx服务器概念：提供某种或者多种服务（功能）的机器(计算机) 1、硬件 性能比较好的电脑主机 2、软件 实现各种服务支持，特定的协议软件 Nginx 特点1、热部署：nginx在修改配置文件之后，不需要重启，重载操作。 2、可以高并发连接：相同配置的服务器，nginx比apache能接受的连接多很多 3、低的内存消耗：相同的服务器，nginx比apache低的消耗 4、处理响应请求很快：ng">
 <meta name="keywords" content="服务器">
@@ -304,19 +304,25 @@
 </aside>
 <div class="post">
     <div class="pjax">
-        <article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
+        <article id="post-b" class="article article-type-post" itemscope itemprop="blogPost">
     
-        <h1 class="article-title">Hello World</h1>
+        <h1 class="article-title">Nginx</h1>
     
     <div class="article-meta">
         
         
         
+        
+        <span class="tag">
+            
+            <a href="javascript:" class="color4">服务器</a>
+            
+        </span>
         
     </div>
     <div class="article-meta">
         
-        创建时间:<time class="date" title='更新时间: 2019-09-19 21:27:40'>2019-09-19 21:27</time>
+        创建时间:<time class="date" title='更新时间: 2019-10-08 16:30:39'>2019-10-08 10:34</time>
         
     </div>
     <div class="article-meta">
@@ -338,7 +344,7 @@
     
     <div class="toc-ref">
     
-        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Quick-Start"><span class="toc-text">Quick Start</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Create-a-new-post"><span class="toc-text">Create a new post</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Run-server"><span class="toc-text">Run server</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Generate-static-files"><span class="toc-text">Generate static files</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Deploy-to-remote-sites"><span class="toc-text">Deploy to remote sites</span></a></li></ol></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Nginx"><span class="toc-text">Nginx</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Nginx-特点"><span class="toc-text">Nginx 特点</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#正向代理"><span class="toc-text">正向代理</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#反向代理"><span class="toc-text">反向代理</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#nginx与ribbon负载均衡区别"><span class="toc-text">nginx与ribbon负载均衡区别</span></a></li></ol></li></ol></li></ol>
     
 <style>
     .left-col .switch-btn,
@@ -354,19 +360,18 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
+        <h2 id="Nginx"><a href="#Nginx" class="headerlink" title="Nginx"></a>Nginx</h2><p>服务器概念：提供某种或者多种服务（功能）的机器(计算机)</p>
+<p>1、硬件 性能比较好的电脑主机</p>
+<p>2、软件 实现各种服务支持，特定的协议软件</p>
+<h3 id="Nginx-特点"><a href="#Nginx-特点" class="headerlink" title="Nginx 特点"></a>Nginx 特点</h3><p>1、热部署：nginx在修改配置文件之后，不需要重启，重载操作。</p>
+<p>2、可以高并发连接：相同配置的服务器，nginx比apache能接受的连接多很多</p>
+<p>3、低的内存消耗：相同的服务器，nginx比apache低的消耗</p>
+<p>4、处理响应请求很快：nginx处理静态文件的时候，响应速度很快</p>
+<p>5、具有很高的可靠性</p>
+<h4 id="正向代理"><a href="#正向代理" class="headerlink" title="正向代理"></a>正向代理</h4><p>客户端想要访问一个服务器，但是它可能无法直接访问这台服务器，这时候就可以找一台可以访问目标服务器的另外一台服务器，而这台服务器就被当做是代理人的角色，称之为代理服务器，于是客户端把请求发给代理服务器，由代理服务器获得目标服务器的数据并返回给客户端。客户端是清楚目标服务器的地址，而目标服务器是不清楚来自客户端，它只知道来自哪个代理服务器，所以正向代理可以屏蔽或隐藏客户端的信息。</p>
+<h4 id="反向代理"><a href="#反向代理" class="headerlink" title="反向代理"></a>反向代理</h4><p>从上面的正向代理，你会大概知道代理服务器是为客户端作代理人，它是站在客户端这边的。其实反向代理就是代理服务器为服务器作为代理人，站在服务器这边，他就是对外屏蔽了服务器的信息，常用的场景就是多台服务器分布式部署，像一些大的网站，由于访问人数很多，就需要多台服务器来解决人数多的问题，这时这些服务器就由一个反向代理服务器来代理，客户端发来求情，先有反向代理服务器，然后按一定的规则分发到明确的服务器，而客户端不知道是哪台服务器。常常用nginx来作反向代理。</p>
+<h4 id="nginx与ribbon负载均衡区别"><a href="#nginx与ribbon负载均衡区别" class="headerlink" title="nginx与ribbon负载均衡区别"></a>nginx与ribbon负载均衡区别</h4><p>1、nginx是服务器端的负载均衡器，所有请求发送到nginx之后，nginx通过反向代理的功能分发到不同的服务器，做负载均衡。</p>
+<p>2、ribbon是客户端的负载均衡器，他是通过将eureka注册中心上的服务读取下来，缓存在本地，本地通过轮询或其他算法，实现客户端的负载均衡。</p>
 
       
        <hr><span style="font-style: italic;color: gray;"> 转载请注明来源，欢迎对文章中的引用来源进行考证，欢迎指出任何有错误或不够清晰的表达。可以在下面评论区评论，也可以邮件至 jaytp@qq.com </span>
@@ -380,12 +385,12 @@
 
 
 <div class="article_copyright">
-    <p><span class="copy-title">文章标题:</span>Hello World</p>
+    <p><span class="copy-title">文章标题:</span>Nginx</p>
     
     <p><span class="copy-title">本文作者:</span><a href="javascript:void(0)" title="John Doe">John Doe</a></p>
-    <p><span class="copy-title">发布时间:</span>2019-09-19, 21:27:40</p>
-    <p><span class="copy-title">最后更新:</span>2019-09-19, 21:27:40</p>
-    <span class="copy-title">原始链接:</span><a class="post-url" href="/2019/09/19/hello-world/" title="Hello World">https://yuyujjff.club/2019/09/19/hello-world/</a>
+    <p><span class="copy-title">发布时间:</span>2019-10-08, 10:34:02</p>
+    <p><span class="copy-title">最后更新:</span>2019-10-08, 16:30:39</p>
+    <span class="copy-title">原始链接:</span><a class="post-url" href="/2019/10/08/b/" title="Nginx">https://yuyujjff.club/2019/10/08/b/</a>
     <p>
         <span class="copy-title">版权声明:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" title="CC BY-NC-SA 4.0 International" target = "_blank">"署名-非商用-相同方式共享 4.0"</a> 转载请保留原文链接及作者。
     </p>
