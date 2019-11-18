@@ -52,7 +52,7 @@
 </div>
 
 <body>
-<aside class="nav mobile">
+<aside class="nav">
     <div class="nav-left">
         <a href="/" class="avatar_target">
     <img class="avatar" src="/img/avatar.jpg" />
@@ -309,12 +309,41 @@
         </div>
     </div>
 </aside>
-<div class="post index">
+<div class="post">
     <div class="pjax">
-        <article class="index">
-            <div class="toc-ref">
+        <article id="post-git与github" class="article article-type-post" itemscope itemprop="blogPost">
     
-        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Why-Blog"><span class="toc-text">Why Blog</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#对博客的理解"><span class="toc-text">对博客的理解</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#关于叶落阁"><span class="toc-text">关于叶落阁</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#博客平台"><span class="toc-text">博客平台</span></a></li></ol></li></ol>
+    <div class="article-meta">
+        
+        
+        
+        
+    </div>
+    <div class="article-meta">
+        
+        创建时间:<time class="date" title='更新时间: 2019-08-20 19:56:53'>2019-11-18 16:33</time>
+        
+    </div>
+    <div class="article-meta">
+        
+        
+        <span id="busuanzi_container_page_pv">
+            阅读:<span id="busuanzi_value_page_pv">
+                <span class="count-comment">
+                    <span class="spinner">
+                      <div class="cube1"></div>
+                      <div class="cube2"></div>
+                    </span>
+                </span>
+            </span>
+        </span>
+        
+        
+    </div>
+    
+    <div class="toc-ref">
+    
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#git与github"><span class="toc-text">git与github</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#提交操作"><span class="toc-text">提交操作</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#撤销操作："><span class="toc-text">撤销操作：</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#删除文件"><span class="toc-text">删除文件</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#分支开发"><span class="toc-text">分支开发</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#关联远程仓库"><span class="toc-text">关联远程仓库</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#第一个问题"><span class="toc-text">第一个问题</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#克隆项目-下载项目"><span class="toc-text">克隆项目(下载项目)</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#整合idea"><span class="toc-text">整合idea</span></a></li></ol></li></ol>
     
 <style>
     .left-col .switch-btn,
@@ -327,36 +356,93 @@
     }
 </style>
 </div>
-            <h1 id="Why-Blog"><a href="#Why-Blog" class="headerlink" title="Why Blog"></a>Why Blog</h1><h2 id="对博客的理解"><a href="#对博客的理解" class="headerlink" title="对博客的理解"></a>对博客的理解</h2><p>喜欢写Blog的人，会经历三个阶段。</p>
-<blockquote>
-<p>第一阶段，刚接触Blog，觉得很新鲜，试着选择一个免费空间来写。</p>
-</blockquote>
-<blockquote>
-<p>第二阶段，发现免费空间限制太多，就自己购买域名和空间，搭建独立博客。</p>
-</blockquote>
-<blockquote>
-<p>第三阶段，觉得独立博客的管理太麻烦，最好在保留控制权的前提下，让别人来管，自己只负责写文章。</p>
-</blockquote>
-<p>我们每个人的在网络上产生的数据越来越多，这些信息是我们在互联网上存在过的痕迹，值得我们认真对待。但是它们被分散分布在各个网站上。很多时候我们很难将它们聚合在一起，而且各个网站的信息排布方式也没有办法自由控制，所以我们需要一个可以由自己主宰的空间——博客。</p>
-<p>通过博客，我们可以记录自己的生活和成长的轨迹。它不像 Twitter 那样碎片化，也不像 Facebook 那样关系化，它是私人的空间。</p>
-<h2 id="关于叶落阁"><a href="#关于叶落阁" class="headerlink" title="关于叶落阁"></a>关于叶落阁</h2><p><strong>叶落阁</strong> 是阿杰（杨玉杰）的个人站。</p>
-<p>到目前为止已经写了<code class="article_number"></code>篇文章， 共<code class="site_word_count"></code>字。</p>
-<p>本站访问人数：<code class="site_uv"></code>人次 ， 访问量：<code class="site_pv"></code>次</p>
-<h2 id="博客平台"><a href="#博客平台" class="headerlink" title="博客平台"></a>博客平台</h2><p>这个博客通过 <a href="https://hexo.io/">Hexo</a> 生成，部署在 <a href="https://pages.github.com/">GitHub Pages</a>，主题 <a href="https://github.com/yelog/hexo-theme-3-hexo">3-hexo</a> 已经在github上开源</p>
-<p>主要功能：</p>
-<ul>
-<li>搜索支持文章标题、标签(#标签)、作者(@作者)</li>
-<li>pad/手机等移动端适配</li>
-<li>页面全局快捷键 <a href='http://yelog.org/2017/03/24/3-hexo-shortcuts/'>3-hexo快捷键说明</a></li>
-</ul>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="git与github"><a href="#git与github" class="headerlink" title="git与github"></a>git与github</h2><p>git init 初始化一个文件夹为一个git仓库</p>
+<p>ls -a查看文件夹下文件</p>
+<p>设置签名：</p>
+<p>git config [–global] user.name 用户</p>
+<p>git config [–global] user.email 邮箱</p>
+<h3 id="提交操作"><a href="#提交操作" class="headerlink" title="提交操作"></a>提交操作</h3><p>git add 文件名 （通知git将要提交这个文件，还没有提交上去git）</p>
+<p>git commit -m”日志” hello.java 把文件提交到本地仓库</p>
+<p>git reset HEAD <file>  取消提交</file></p>
+<p>git status 查看git状态</p>
+<p>git rm –cached 文件名 将文件从缓存中删除</p>
+<p>git diff：查看当前版本发生的差异</p>
+<p>工作区（文件夹），暂存区，Git仓库</p>
+<p>基本的Git工作流程：</p>
+<p>1、在工作目录中修改文件</p>
+<p>2、暂存文件，将文件的快照放入暂存区域。git add hello.java</p>
+<p>3、提交更新，找到暂存区的文件，将快照永久性储存到Git仓库目录。Git commit -m “日志” 文件名</p>
+<p>1、用 git log可以查看提交历史，可以获取版本号</p>
+<p>2、使用git log -pretty=oneline 查看简介的历史版本</p>
+<p>3、用 git reset –hard commit id 可以退回到某个版本, commit id是版本号</p>
+<p>4、退回之后，相当于时光穿梭回过去，所以看不见未来的版本，git log 看不到信息。所以采用git reflog</p>
+<p>可以解决这个问题，该命令可以显示回退到历史版本需要几步  </p>
+<p>git reset  –hard 开头的id（再次选择版本）</p>
+<h3 id="撤销操作："><a href="#撤销操作：" class="headerlink" title="撤销操作："></a>撤销操作：</h3><p>1、如果文件只是在工作区修改了，我们想要撤销这次修改可以用  git checkout – 文件名</p>
+<p>用 cat 文件名   查看文件内容</p>
+<p>2、如果文件已经在缓存区了，先用 git reset  文件名 或者 git reset  head 文件名      重置一下</p>
+<p>然后用git checkout – 文件名   进行覆盖</p>
+<p>场景：本地修改，未add</p>
+<p>撤销：git checkout – 文件名         撤销本地修改</p>
+<p>场景： 本地修改，已经add  未commit</p>
+<p>git reset head hello.java</p>
+<p>git checkout – 文件名</p>
+<h3 id="删除文件"><a href="#删除文件" class="headerlink" title="删除文件"></a>删除文件</h3><p>git rm 文件名</p>
+<p>git commit -m “操作日志”  提交本次删除</p>
+<p>想恢复</p>
+<p>git reflog</p>
+<p>git reset –hard 版本号</p>
+<h3 id="分支开发"><a href="#分支开发" class="headerlink" title="分支开发"></a>分支开发</h3><p>git branch 分支名    新建分支</p>
+<p>git branch -v   查看分支信息</p>
+<p>git checkout   分支名</p>
+<p>把分支合并到master（主干）下</p>
+<p>git checkout master</p>
+<p>git merge   分支名</p>
+<h3 id="关联远程仓库"><a href="#关联远程仓库" class="headerlink" title="关联远程仓库"></a>关联远程仓库</h3><p>git remote -v        查看本地仓库关联远程仓库关联信息</p>
+<p>git remote add origin 远程仓库地址           关联远程仓库</p>
+<p>git push -u origin master      把master分支提交到远程仓库</p>
+<p>上传代码是需要权限的，下载代码是不需要权限的，只要是公开的都可以下载。</p>
+<h4 id="第一个问题"><a href="#第一个问题" class="headerlink" title="第一个问题"></a>第一个问题</h4><p>上传步骤：<br>git add .<br>git commit -m “提示消息”<br>git push origin master<br>出错：<br>! [rejected] master -&gt; master (fetch first) error: failed to push some refs to ‘ 。。。’<br>出现这个问题是因为github中的README.md文件不在本地代码目录中，可以通过如下命令进行代码合并<br>git push –rebase origin master </p>
+<h3 id="克隆项目-下载项目"><a href="#克隆项目-下载项目" class="headerlink" title="克隆项目(下载项目)"></a>克隆项目(下载项目)</h3><p>git clone <a href="https://github.com/cyhbyw/springBoot_atguigu.git(克隆地址)" target="_blank" rel="noopener">https://github.com/cyhbyw/springBoot_atguigu.git(克隆地址)</a></p>
+<p>把远程仓库的代码拉到本地</p>
+<p>git pull origin master （git pull 别名 分支名）</p>
+<h3 id="整合idea"><a href="#整合idea" class="headerlink" title="整合idea"></a>整合idea</h3><p>菜单栏中的VCS的意思是版本控制</p>
 
-        </article>
-        
-        <p>
-            <a href="javascript:void(0)" class="dashang" onclick="dashangToggle()">赏</a>
-        </p>
-        
-        
+      
+       <hr><span style="font-style: italic;color: gray;"> 转载请注明来源，欢迎对文章中的引用来源进行考证，欢迎指出任何有错误或不够清晰的表达。可以在下面评论区评论，也可以邮件至 jaytp@qq.com </span>
+    </div>
+</article>
+
+
+<p>
+    <a href="javascript:void(0)" class="dashang" onclick="dashangToggle()">赏</a>
+</p>
+
+
+<div class="article_copyright">
+    <p><span class="copy-title">文章标题:</span></p>
+    
+    <p><span class="copy-title">本文作者:</span><a href="javascript:void(0)" title="John Doe">John Doe</a></p>
+    <p><span class="copy-title">发布时间:</span>2019-11-18, 16:33:59</p>
+    <p><span class="copy-title">最后更新:</span>2019-08-20, 19:56:53</p>
+    <span class="copy-title">原始链接:</span><a class="post-url" href="/2019/11/18/git与github/" title="">https://yuyujjff.club/2019/11/18/git与github/</a>
+    <p>
+        <span class="copy-title">版权声明:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" title="CC BY-NC-SA 4.0 International" target = "_blank">"署名-非商用-相同方式共享 4.0"</a> 转载请保留原文链接及作者。
+    </p>
+</div>
+
+
+
+
+
+    
+
+
+
+
     </div>
     <div class="copyright">
         <p class="footer-entry">©2016-2019 Yelog</p>
