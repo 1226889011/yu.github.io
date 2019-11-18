@@ -208,7 +208,7 @@
 
 
 <ul>
-    <li><div class="all active">全部文章<small>(4)</small></div></li>
+    <li><div class="all active">全部文章<small>(13)</small></div></li>
     
 </ul>
 <div class="left-bottom">
@@ -220,7 +220,7 @@
     </div>
     <div><a class="about  hasFriend  site_url"  href="/about">关于</a><a style="width: 50%"  class="friends">友链</a></div>
 </div>
-<input type="hidden" id="yelog_site_posts_number" value="4">
+<input type="hidden" id="yelog_site_posts_number" value="13">
 
 <div style="display: none">
     <span id="busuanzi_value_site_uv"></span>
@@ -259,11 +259,27 @@
     </li>
     
     <li class="article-tag-list-item">
+        <a href="javascript:" class="color1">Linux</a>
+    </li>
+    
+    <li class="article-tag-list-item">
         <a href="javascript:" class="color4">服务器</a>
     </li>
     
     <li class="article-tag-list-item">
+        <a href="javascript:" class="color3">Swagger</a>
+    </li>
+    
+    <li class="article-tag-list-item">
         <a href="javascript:" class="color2">java基础</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a href="javascript:" class="color4">阿里云</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a href="javascript:" class="color5">镜像操作</a>
     </li>
     
     <div class="clearfix"></div>
@@ -281,11 +297,67 @@
         </a>
         
         <a  class=""
+           href="/2019/09/26/Spring MVC工作原理/"
+           data-tag="Spring"
+           data-author="" >
+            <span class="post-title" title="Spring MVC工作原理">Spring MVC工作原理</span>
+            <span class="post-date" title="2019-09-26 21:33:27">2019/09/26</span>
+        </a>
+        
+        <a  class=""
+           href="/2019/11/18/Linux命令/"
+           data-tag="Linux"
+           data-author="" >
+            <span class="post-title" title="Linux 命令">Linux 命令</span>
+            <span class="post-date" title="2019-11-18 16:40:41">2019/11/18</span>
+        </a>
+        
+        <a  class=""
+           href="/2019/09/26/SpringCloud/"
+           data-tag="Spring"
+           data-author="" >
+            <span class="post-title" title="Spring Cloud">Spring Cloud</span>
+            <span class="post-date" title="2019-09-26 22:23:27">2019/09/26</span>
+        </a>
+        
+        <a  class=""
+           href="/2019/09/26/Spring/"
+           data-tag="Spring"
+           data-author="" >
+            <span class="post-title" title="Spring">Spring</span>
+            <span class="post-date" title="2019-09-26 21:24:47">2019/09/26</span>
+        </a>
+        
+        <a  class=""
+           href="/2019/09/26/Springboot的四种属性注入/"
+           data-tag="Spring"
+           data-author="" >
+            <span class="post-title" title="Spring Boot">Spring Boot</span>
+            <span class="post-date" title="2019-09-26 21:55:45">2019/09/26</span>
+        </a>
+        
+        <a  class=""
            href="/2019/10/08/b/"
            data-tag="服务器"
            data-author="" >
             <span class="post-title" title="Nginx">Nginx</span>
             <span class="post-date" title="2019-10-08 10:34:02">2019/10/08</span>
+        </a>
+        
+        <a  class=""
+           href="/2019/09/26/Swagger/"
+           data-tag="Swagger"
+           data-author="" >
+            <span class="post-title" title="Swagger">Swagger</span>
+            <span class="post-date" title="2019-09-26 21:23:27">2019/09/26</span>
+        </a>
+        
+        <a  class=""
+           href="/2019/09/19/hello-world/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="Hello World">Hello World</span>
+            <span class="post-date" title="2019-09-19 21:27:40">2019/09/19</span>
         </a>
         
         <a  class=""
@@ -297,11 +369,27 @@
         </a>
         
         <a  class=""
-           href="/2019/09/19/hello-world/"
-           data-tag=""
+           href="/2019/09/26/Web服务器与应用服务器/"
+           data-tag="服务器"
            data-author="" >
-            <span class="post-title" title="Hello World">Hello World</span>
-            <span class="post-date" title="2019-09-19 21:27:40">2019/09/19</span>
+            <span class="post-title" title="Web服务器于应用服务器">Web服务器于应用服务器</span>
+            <span class="post-date" title="2019-09-26 21:23:27">2019/09/26</span>
+        </a>
+        
+        <a  class=""
+           href="/2019/09/26/阿里云API调用/"
+           data-tag="阿里云"
+           data-author="" >
+            <span class="post-title" title="阿里云API调用">阿里云API调用</span>
+            <span class="post-date" title="2019-09-26 21:25:27">2019/09/26</span>
+        </a>
+        
+        <a  class=""
+           href="/2019/09/26/镜像操作/"
+           data-tag="镜像操作"
+           data-author="" >
+            <span class="post-title" title="镜像操作">镜像操作</span>
+            <span class="post-date" title="2019-09-26 21:27:33">2019/09/26</span>
         </a>
         
     </nav>
@@ -452,7 +540,7 @@
     /*作者、标签的自动补全*/
     $(function () {
         $('.search').AutoComplete({
-            'data': ['#Spring','#服务器','#java基础',],
+            'data': ['#Spring','#Linux','#服务器','#Swagger','#java基础','#阿里云','#镜像操作',],
             'itemHeight': 20,
             'width': 418
         }).AutoComplete('show');
