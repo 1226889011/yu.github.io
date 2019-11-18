@@ -6,17 +6,18 @@
   <meta name="keywords" content=" java基础 ">
   <meta name="description" content="int和Integer的区别 | Hexo">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-<meta name="description" content="git与githubgit init 初始化一个文件夹为一个git仓库 ls -a查看文件夹下文件 设置签名： git config [–global] user.name 用户 git config [–global] user.email 邮箱 提交操作git add 文件名 （通知git将要提交这个文件，还没有提交上去git） git commit -m”日志” hello.java 把文件">
+<meta name="description" content="Nginx服务器概念：提供某种或者多种服务（功能）的机器(计算机) 1、硬件 性能比较好的电脑主机 2、软件 实现各种服务支持，特定的协议软件 Nginx 特点1、热部署：nginx在修改配置文件之后，不需要重启，重载操作。 2、可以高并发连接：相同配置的服务器，nginx比apache能接受的连接多很多 3、低的内存消耗：相同的服务器，nginx比apache低的消耗 4、处理响应请求很快：ng">
+<meta name="keywords" content="服务器">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hexo">
-<meta property="og:url" content="https://yuyujjff.club/2019/11/18/git与github/index.html">
+<meta property="og:title" content="Nginx">
+<meta property="og:url" content="https://yuyujjff.club/2019/10/08/b/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="git与githubgit init 初始化一个文件夹为一个git仓库 ls -a查看文件夹下文件 设置签名： git config [–global] user.name 用户 git config [–global] user.email 邮箱 提交操作git add 文件名 （通知git将要提交这个文件，还没有提交上去git） git commit -m”日志” hello.java 把文件">
+<meta property="og:description" content="Nginx服务器概念：提供某种或者多种服务（功能）的机器(计算机) 1、硬件 性能比较好的电脑主机 2、软件 实现各种服务支持，特定的协议软件 Nginx 特点1、热部署：nginx在修改配置文件之后，不需要重启，重载操作。 2、可以高并发连接：相同配置的服务器，nginx比apache能接受的连接多很多 3、低的内存消耗：相同的服务器，nginx比apache低的消耗 4、处理响应请求很快：ng">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2019-08-20T11:56:53.000Z">
+<meta property="og:updated_time" content="2019-10-08T09:03:48.606Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hexo">
-<meta name="twitter:description" content="git与githubgit init 初始化一个文件夹为一个git仓库 ls -a查看文件夹下文件 设置签名： git config [–global] user.name 用户 git config [–global] user.email 邮箱 提交操作git add 文件名 （通知git将要提交这个文件，还没有提交上去git） git commit -m”日志” hello.java 把文件">
+<meta name="twitter:title" content="Nginx">
+<meta name="twitter:description" content="Nginx服务器概念：提供某种或者多种服务（功能）的机器(计算机) 1、硬件 性能比较好的电脑主机 2、软件 实现各种服务支持，特定的协议软件 Nginx 特点1、热部署：nginx在修改配置文件之后，不需要重启，重载操作。 2、可以高并发连接：相同配置的服务器，nginx比apache能接受的连接多很多 3、低的内存消耗：相同的服务器，nginx比apache低的消耗 4、处理响应请求很快：ng">
 
 
 <link rel="icon" href="/img/avatar.jpg">
@@ -254,6 +255,10 @@
     <div class="tags-list">
     
     <li class="article-tag-list-item">
+        <a href="javascript:" class="color2">Spring</a>
+    </li>
+    
+    <li class="article-tag-list-item">
         <a href="javascript:" class="color2">java基础</a>
     </li>
     
@@ -268,6 +273,14 @@
     <nav id="title-list-nav">
         
         <a  class=""
+           href="/2019/09/26/Spring Date/"
+           data-tag="Spring"
+           data-author="" >
+            <span class="post-title" title="Spring Data">Spring Data</span>
+            <span class="post-date" title="2019-09-26 21:23:27">2019/09/26</span>
+        </a>
+        
+        <a  class=""
            href="/2019/09/26/a/"
            data-tag="java基础"
            data-author="" >
@@ -276,11 +289,11 @@
         </a>
         
         <a  class=""
-           href="/2019/11/18/git与github/"
+           href="/2019/09/19/hello-world/"
            data-tag=""
            data-author="" >
-            <span class="post-title" title=""></span>
-            <span class="post-date" title="2019-11-18 16:33:59">2019/11/18</span>
+            <span class="post-title" title="Hello World">Hello World</span>
+            <span class="post-date" title="2019-09-19 21:27:40">2019/09/19</span>
         </a>
         
         <a  class=""
@@ -289,14 +302,6 @@
            data-author="" >
             <span class="post-title" title="Nginx">Nginx</span>
             <span class="post-date" title="2019-10-08 10:34:02">2019/10/08</span>
-        </a>
-        
-        <a  class=""
-           href="/2019/09/19/hello-world/"
-           data-tag=""
-           data-author="" >
-            <span class="post-title" title="Hello World">Hello World</span>
-            <span class="post-date" title="2019-09-19 21:27:40">2019/09/19</span>
         </a>
         
     </nav>
@@ -481,7 +486,7 @@
     /*作者、标签的自动补全*/
     $(function () {
         $('.search').AutoComplete({
-            'data': ['#java基础','#服务器',],
+            'data': ['#Spring','#java基础','#服务器',],
             'itemHeight': 20,
             'width': 418
         }).AutoComplete('show');
