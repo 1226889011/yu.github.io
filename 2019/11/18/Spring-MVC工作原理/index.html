@@ -2,9 +2,9 @@
 <html>
 <head><meta name="generator" content="Hexo 3.9.0">
   <meta charset="utf-8">
-  <title>Linux 命令 | Hexo</title>
-  <meta name="keywords" content=" Linux ">
-  <meta name="description" content="Linux 命令 | Hexo">
+  <title>Spring MVC工作原理 | Hexo</title>
+  <meta name="keywords" content=" Spring ">
+  <meta name="description" content="Spring MVC工作原理 | Hexo">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <meta name="description" content="LInux命令netstat -ntlp：查看当前所有tcp端口 各个参数解释如下： -t : 只显示TCP端口 -u : 只显示UDP端口 -l : 仅显示监听套接字(能够读写与收发通讯协议(protocol)的程序) -p : 显示进程标识符和程序名称，每一个套接字/端口都属于一个程序 -n : 不进行DNS轮询，显示IP(这样可以加快查询的时间) netstat -ntlp|grep 330">
 <meta name="keywords" content="Linux">
@@ -404,9 +404,9 @@
 </aside>
 <div class="post">
     <div class="pjax">
-        <article id="post-Linux命令" class="article article-type-post" itemscope itemprop="blogPost">
+        <article id="post-Spring-MVC工作原理" class="article article-type-post" itemscope itemprop="blogPost">
     
-        <h1 class="article-title">Linux 命令</h1>
+        <h1 class="article-title">Spring MVC工作原理</h1>
     
     <div class="article-meta">
         
@@ -415,14 +415,14 @@
         
         <span class="tag">
             
-            <a href="javascript:" class="color1">Linux</a>
+            <a href="javascript:" class="color2">Spring</a>
             
         </span>
         
     </div>
     <div class="article-meta">
         
-        创建时间:<time class="date" title='更新时间: 2019-11-18 17:07:10'>2019-11-18 16:40</time>
+        创建时间:<time class="date" title='更新时间: 2019-11-18 17:40:47'>2019-11-18 17:22</time>
         
     </div>
     <div class="article-meta">
@@ -444,7 +444,7 @@
     
     <div class="toc-ref">
     
-        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#LInux命令"><span class="toc-text">LInux命令</span></a></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#Spring-MVC工作原理"><span class="toc-text">Spring MVC工作原理</span></a></li></ol>
     
 <style>
     .left-col .switch-btn,
@@ -460,16 +460,15 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h1 id="LInux命令"><a href="#LInux命令" class="headerlink" title="LInux命令"></a>LInux命令</h1><p>netstat -ntlp：查看当前所有tcp端口</p>
-<p>各个参数解释如下：</p>
-<p>-t : 只显示TCP端口</p>
-<p>-u : 只显示UDP端口</p>
-<p>-l : 仅显示监听套接字(能够读写与收发通讯协议(protocol)的程序)</p>
-<p>-p : 显示进程标识符和程序名称，每一个套接字/端口都属于一个程序</p>
-<p>-n : 不进行DNS轮询，显示IP(这样可以加快查询的时间)</p>
-<p>netstat -ntlp|grep 3306 用grep命令查看端口</p>
-<p>有时候需要远程访问时需要开启端口，可以使用如下命令<strong>：/sbin/iptables -I INPUT -p tcp –dport 8080 -j ACCEPT</strong></p>
-<p>需要关闭端口时，可以使用如下命令<strong>：/sbin/iptables -I INPUT -p tcp –dport 8080 -j DROP</strong></p>
+        <h3 id="Spring-MVC工作原理"><a href="#Spring-MVC工作原理" class="headerlink" title="Spring MVC工作原理"></a>Spring MVC工作原理</h3><p>1、url请求被DispatcherServlet（中央调度器）拦截</p>
+<p>2、DispatcherServlet请求查找handle交给HandlerMapping（处理器映射器）进行处理</p>
+<p>3、HandlerMapping返回一个HandleExecutionChain（执行链）到 DispatcherServlet  （执行链中包含一个handler和n个HandlerAdapt个）</p>
+<p>4、DispatcherServlet发送请求适配的Handler（处理器）到HandlerAdapt</p>
+<p>5、HandlerAdapt(处理器适配器)去执行handler返回modeandview到DispatcherServlet</p>
+<p>6、DispatcherServlet请求View resolver(视图解析器)解析视图返回view到DispatcherServlet</p>
+<p>7、DispatcherServlet渲染视图到view视图返回DispatcherServlet</p>
+<p>8、DispatcherServlet发送reponse响应</p>
+<p><img src="/2019/11/18/Spring-MVC工作原理/1572859306165.png" alt></p>
 
       
        <hr><span style="font-style: italic;color: gray;"> 转载请注明来源，欢迎对文章中的引用来源进行考证，欢迎指出任何有错误或不够清晰的表达。可以在下面评论区评论，也可以邮件至 jaytp@qq.com </span>
@@ -483,12 +482,12 @@
 
 
 <div class="article_copyright">
-    <p><span class="copy-title">文章标题:</span>Linux 命令</p>
+    <p><span class="copy-title">文章标题:</span>Spring MVC工作原理</p>
     
     <p><span class="copy-title">本文作者:</span><a href="javascript:void(0)" title="John Doe">John Doe</a></p>
-    <p><span class="copy-title">发布时间:</span>2019-11-18, 16:40:41</p>
-    <p><span class="copy-title">最后更新:</span>2019-11-18, 17:07:10</p>
-    <span class="copy-title">原始链接:</span><a class="post-url" href="/2019/11/18/Linux命令/" title="Linux 命令">https://yuyujjff.club/2019/11/18/Linux命令/</a>
+    <p><span class="copy-title">发布时间:</span>2019-11-18, 17:22:28</p>
+    <p><span class="copy-title">最后更新:</span>2019-11-18, 17:40:47</p>
+    <span class="copy-title">原始链接:</span><a class="post-url" href="/2019/11/18/Spring-MVC工作原理/" title="Spring MVC工作原理">https://yuyujjff.club/2019/11/18/Spring-MVC工作原理/</a>
     <p>
         <span class="copy-title">版权声明:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" title="CC BY-NC-SA 4.0 International" target = "_blank">"署名-非商用-相同方式共享 4.0"</a> 转载请保留原文链接及作者。
     </p>
