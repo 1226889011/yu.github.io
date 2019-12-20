@@ -6,18 +6,18 @@
   <meta name="keywords" content=" Spring ">
   <meta name="description" content="Spring MVC工作原理 | Hexo">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-<meta name="description" content="LInux命令netstat -ntlp：查看当前所有tcp端口 各个参数解释如下： -t : 只显示TCP端口 -u : 只显示UDP端口 -l : 仅显示监听套接字(能够读写与收发通讯协议(protocol)的程序) -p : 显示进程标识符和程序名称，每一个套接字/端口都属于一个程序 -n : 不进行DNS轮询，显示IP(这样可以加快查询的时间) netstat -ntlp|grep 330">
-<meta name="keywords" content="Linux">
+<meta name="description" content="三范式什么是范式：简言之就是，数据库设计对数据的存储性能，还有开发人员对数据的操作都有莫大的关系。所以建立科学的，规范的的数据库是需要满足一些 规范的来优化数据数据存储方式。在关系型数据库中这些规范就可以称为范式。 什么是三大范式： 第一范式：当关系模式R的所有属性都不能在分解为更基本的数据单位时，称R是满足第一范式的，简记为1NF。满足第一范式是关系模式规范化的最低要 求，否则，将有很多基本操作">
+<meta name="keywords" content="数据库">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Linux 命令">
-<meta property="og:url" content="https://yuyujjff.club/2019/11/18/Linux命令/index.html">
+<meta property="og:title" content="三范式">
+<meta property="og:url" content="https://yuyujjff.club/2019/12/08/三范式/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="LInux命令netstat -ntlp：查看当前所有tcp端口 各个参数解释如下： -t : 只显示TCP端口 -u : 只显示UDP端口 -l : 仅显示监听套接字(能够读写与收发通讯协议(protocol)的程序) -p : 显示进程标识符和程序名称，每一个套接字/端口都属于一个程序 -n : 不进行DNS轮询，显示IP(这样可以加快查询的时间) netstat -ntlp|grep 330">
+<meta property="og:description" content="三范式什么是范式：简言之就是，数据库设计对数据的存储性能，还有开发人员对数据的操作都有莫大的关系。所以建立科学的，规范的的数据库是需要满足一些 规范的来优化数据数据存储方式。在关系型数据库中这些规范就可以称为范式。 什么是三大范式： 第一范式：当关系模式R的所有属性都不能在分解为更基本的数据单位时，称R是满足第一范式的，简记为1NF。满足第一范式是关系模式规范化的最低要 求，否则，将有很多基本操作">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2019-11-18T09:07:10.237Z">
+<meta property="og:updated_time" content="2019-12-08T11:31:30.193Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Linux 命令">
-<meta name="twitter:description" content="LInux命令netstat -ntlp：查看当前所有tcp端口 各个参数解释如下： -t : 只显示TCP端口 -u : 只显示UDP端口 -l : 仅显示监听套接字(能够读写与收发通讯协议(protocol)的程序) -p : 显示进程标识符和程序名称，每一个套接字/端口都属于一个程序 -n : 不进行DNS轮询，显示IP(这样可以加快查询的时间) netstat -ntlp|grep 330">
+<meta name="twitter:title" content="三范式">
+<meta name="twitter:description" content="三范式什么是范式：简言之就是，数据库设计对数据的存储性能，还有开发人员对数据的操作都有莫大的关系。所以建立科学的，规范的的数据库是需要满足一些 规范的来优化数据数据存储方式。在关系型数据库中这些规范就可以称为范式。 什么是三大范式： 第一范式：当关系模式R的所有属性都不能在分解为更基本的数据单位时，称R是满足第一范式的，简记为1NF。满足第一范式是关系模式规范化的最低要 求，否则，将有很多基本操作">
 
 
 <link rel="icon" href="/img/avatar.jpg">
@@ -255,15 +255,11 @@
     <div class="tags-list">
     
     <li class="article-tag-list-item">
-        <a href="javascript:" class="color2">Spring</a>
-    </li>
-    
-    <li class="article-tag-list-item">
         <a href="javascript:" class="color1">Linux</a>
     </li>
     
     <li class="article-tag-list-item">
-        <a href="javascript:" class="color2">java基础</a>
+        <a href="javascript:" class="color2">Spring</a>
     </li>
     
     <li class="article-tag-list-item">
@@ -275,7 +271,11 @@
     </li>
     
     <li class="article-tag-list-item">
-        <a href="javascript:" class="color4">阿里云</a>
+        <a href="javascript:" class="color2">java基础</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a href="javascript:" class="color4">数据库</a>
     </li>
     
     <li class="article-tag-list-item">
@@ -283,7 +283,7 @@
     </li>
     
     <li class="article-tag-list-item">
-        <a href="javascript:" class="color4">数据库</a>
+        <a href="javascript:" class="color4">阿里云</a>
     </li>
     
     <div class="clearfix"></div>
@@ -293,11 +293,11 @@
     <nav id="title-list-nav">
         
         <a  class=""
-           href="/2019/09/26/Spring Date/"
-           data-tag="Spring"
+           href="/2019/11/18/Linux命令/"
+           data-tag="Linux"
            data-author="" >
-            <span class="post-title" title="Spring Data">Spring Data</span>
-            <span class="post-date" title="2019-09-26 21:23:27">2019/09/26</span>
+            <span class="post-title" title="Linux 命令">Linux 命令</span>
+            <span class="post-date" title="2019-11-18 16:40:41">2019/11/18</span>
         </a>
         
         <a  class=""
@@ -309,19 +309,11 @@
         </a>
         
         <a  class=""
-           href="/2019/11/18/Linux命令/"
-           data-tag="Linux"
-           data-author="" >
-            <span class="post-title" title="Linux 命令">Linux 命令</span>
-            <span class="post-date" title="2019-11-18 16:40:41">2019/11/18</span>
-        </a>
-        
-        <a  class=""
-           href="/2019/09/26/Spring/"
+           href="/2019/09/26/Spring Date/"
            data-tag="Spring"
            data-author="" >
-            <span class="post-title" title="Spring">Spring</span>
-            <span class="post-date" title="2019-09-26 21:24:47">2019/09/26</span>
+            <span class="post-title" title="Spring Data">Spring Data</span>
+            <span class="post-date" title="2019-09-26 21:23:27">2019/09/26</span>
         </a>
         
         <a  class=""
@@ -333,11 +325,11 @@
         </a>
         
         <a  class=""
-           href="/2019/09/26/a/"
-           data-tag="java基础"
+           href="/2019/09/26/Spring/"
+           data-tag="Spring"
            data-author="" >
-            <span class="post-title" title="int和Integer的区别">int和Integer的区别</span>
-            <span class="post-date" title="2019-09-26 21:23:27">2019/09/26</span>
+            <span class="post-title" title="Spring">Spring</span>
+            <span class="post-date" title="2019-09-26 21:24:47">2019/09/26</span>
         </a>
         
         <a  class=""
@@ -357,11 +349,11 @@
         </a>
         
         <a  class=""
-           href="/2019/09/19/hello-world/"
-           data-tag=""
+           href="/2019/09/26/Web服务器与应用服务器/"
+           data-tag="服务器"
            data-author="" >
-            <span class="post-title" title="Hello World">Hello World</span>
-            <span class="post-date" title="2019-09-19 21:27:40">2019/09/19</span>
+            <span class="post-title" title="Web服务器于应用服务器">Web服务器于应用服务器</span>
+            <span class="post-date" title="2019-09-26 21:23:27">2019/09/26</span>
         </a>
         
         <a  class=""
@@ -373,19 +365,11 @@
         </a>
         
         <a  class=""
-           href="/2019/09/26/阿里云API调用/"
-           data-tag="阿里云"
+           href="/2019/09/26/a/"
+           data-tag="java基础"
            data-author="" >
-            <span class="post-title" title="阿里云API调用">阿里云API调用</span>
-            <span class="post-date" title="2019-09-26 21:25:27">2019/09/26</span>
-        </a>
-        
-        <a  class=""
-           href="/2019/09/26/镜像操作/"
-           data-tag="镜像操作"
-           data-author="" >
-            <span class="post-title" title="镜像操作">镜像操作</span>
-            <span class="post-date" title="2019-09-26 21:27:33">2019/09/26</span>
+            <span class="post-title" title="int和Integer的区别">int和Integer的区别</span>
+            <span class="post-date" title="2019-09-26 21:23:27">2019/09/26</span>
         </a>
         
         <a  class=""
@@ -397,11 +381,27 @@
         </a>
         
         <a  class=""
-           href="/2019/09/26/Web服务器与应用服务器/"
-           data-tag="服务器"
+           href="/2019/09/19/hello-world/"
+           data-tag=""
            data-author="" >
-            <span class="post-title" title="Web服务器于应用服务器">Web服务器于应用服务器</span>
-            <span class="post-date" title="2019-09-26 21:23:27">2019/09/26</span>
+            <span class="post-title" title="Hello World">Hello World</span>
+            <span class="post-date" title="2019-09-19 21:27:40">2019/09/19</span>
+        </a>
+        
+        <a  class=""
+           href="/2019/09/26/镜像操作/"
+           data-tag="镜像操作"
+           data-author="" >
+            <span class="post-title" title="镜像操作">镜像操作</span>
+            <span class="post-date" title="2019-09-26 21:27:33">2019/09/26</span>
+        </a>
+        
+        <a  class=""
+           href="/2019/09/26/阿里云API调用/"
+           data-tag="阿里云"
+           data-author="" >
+            <span class="post-title" title="阿里云API调用">阿里云API调用</span>
+            <span class="post-date" title="2019-09-26 21:25:27">2019/09/26</span>
         </a>
         
     </nav>
@@ -560,7 +560,7 @@
     /*作者、标签的自动补全*/
     $(function () {
         $('.search').AutoComplete({
-            'data': ['#Spring','#Linux','#java基础','#Swagger','#服务器','#阿里云','#镜像操作','#数据库',],
+            'data': ['#Linux','#Spring','#Swagger','#服务器','#java基础','#数据库','#镜像操作','#阿里云',],
             'itemHeight': 20,
             'width': 418
         }).AutoComplete('show');
