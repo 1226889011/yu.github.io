@@ -6,18 +6,20 @@
   <meta name="keywords" content=" Spring ">
   <meta name="description" content="Spring Cloud | Hexo">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-<meta name="description" content="三范式什么是范式：简言之就是，数据库设计对数据的存储性能，还有开发人员对数据的操作都有莫大的关系。所以建立科学的，规范的的数据库是需要满足一些 规范的来优化数据数据存储方式。在关系型数据库中这些规范就可以称为范式。 什么是三大范式： 第一范式：当关系模式R的所有属性都不能在分解为更基本的数据单位时，称R是满足第一范式的，简记为1NF。满足第一范式是关系模式规范化的最低要 求，否则，将有很多基本操作">
-<meta name="keywords" content="数据库">
+<meta name="description" content="Spring MVC工作原理1、url请求被DispatcherServlet（中央调度器）拦截 2、DispatcherServlet请求查找handle交给HandlerMapping（处理器映射器）进行处理 3、HandlerMapping返回一个HandleExecutionChain（执行链）到 DispatcherServlet  （执行链中包含一个handler和n个HandlerA">
+<meta name="keywords" content="Spring">
 <meta property="og:type" content="article">
-<meta property="og:title" content="三范式">
-<meta property="og:url" content="https://yuyujjff.club/2019/12/08/三范式/index.html">
+<meta property="og:title" content="Spring MVC工作原理">
+<meta property="og:url" content="https://yuyujjff.club/2019/11/18/Spring-MVC工作原理/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="三范式什么是范式：简言之就是，数据库设计对数据的存储性能，还有开发人员对数据的操作都有莫大的关系。所以建立科学的，规范的的数据库是需要满足一些 规范的来优化数据数据存储方式。在关系型数据库中这些规范就可以称为范式。 什么是三大范式： 第一范式：当关系模式R的所有属性都不能在分解为更基本的数据单位时，称R是满足第一范式的，简记为1NF。满足第一范式是关系模式规范化的最低要 求，否则，将有很多基本操作">
+<meta property="og:description" content="Spring MVC工作原理1、url请求被DispatcherServlet（中央调度器）拦截 2、DispatcherServlet请求查找handle交给HandlerMapping（处理器映射器）进行处理 3、HandlerMapping返回一个HandleExecutionChain（执行链）到 DispatcherServlet  （执行链中包含一个handler和n个HandlerA">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2019-12-08T11:31:30.193Z">
+<meta property="og:image" content="https://yuyujjff.club/2019/11/18/Spring-MVC工作原理/1572859306165.png">
+<meta property="og:updated_time" content="2019-11-18T09:40:47.997Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="三范式">
-<meta name="twitter:description" content="三范式什么是范式：简言之就是，数据库设计对数据的存储性能，还有开发人员对数据的操作都有莫大的关系。所以建立科学的，规范的的数据库是需要满足一些 规范的来优化数据数据存储方式。在关系型数据库中这些规范就可以称为范式。 什么是三大范式： 第一范式：当关系模式R的所有属性都不能在分解为更基本的数据单位时，称R是满足第一范式的，简记为1NF。满足第一范式是关系模式规范化的最低要 求，否则，将有很多基本操作">
+<meta name="twitter:title" content="Spring MVC工作原理">
+<meta name="twitter:description" content="Spring MVC工作原理1、url请求被DispatcherServlet（中央调度器）拦截 2、DispatcherServlet请求查找handle交给HandlerMapping（处理器映射器）进行处理 3、HandlerMapping返回一个HandleExecutionChain（执行链）到 DispatcherServlet  （执行链中包含一个handler和n个HandlerA">
+<meta name="twitter:image" content="https://yuyujjff.club/2019/11/18/Spring-MVC工作原理/1572859306165.png">
 
 
 <link rel="icon" href="/img/avatar.jpg">
@@ -255,11 +257,11 @@
     <div class="tags-list">
     
     <li class="article-tag-list-item">
-        <a href="javascript:" class="color1">Linux</a>
+        <a href="javascript:" class="color2">Spring</a>
     </li>
     
     <li class="article-tag-list-item">
-        <a href="javascript:" class="color2">Spring</a>
+        <a href="javascript:" class="color1">Linux</a>
     </li>
     
     <li class="article-tag-list-item">
@@ -267,7 +269,7 @@
     </li>
     
     <li class="article-tag-list-item">
-        <a href="javascript:" class="color4">服务器</a>
+        <a href="javascript:" class="color5">镜像操作</a>
     </li>
     
     <li class="article-tag-list-item">
@@ -275,15 +277,15 @@
     </li>
     
     <li class="article-tag-list-item">
-        <a href="javascript:" class="color4">数据库</a>
-    </li>
-    
-    <li class="article-tag-list-item">
-        <a href="javascript:" class="color5">镜像操作</a>
+        <a href="javascript:" class="color4">服务器</a>
     </li>
     
     <li class="article-tag-list-item">
         <a href="javascript:" class="color4">阿里云</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a href="javascript:" class="color4">数据库</a>
     </li>
     
     <div class="clearfix"></div>
@@ -291,6 +293,22 @@
 
     
     <nav id="title-list-nav">
+        
+        <a  class=""
+           href="/2019/09/26/Spring Date/"
+           data-tag="Spring"
+           data-author="" >
+            <span class="post-title" title="Spring Data">Spring Data</span>
+            <span class="post-date" title="2019-09-26 21:23:27">2019/09/26</span>
+        </a>
+        
+        <a  class=""
+           href="/2019/09/26/Spring/"
+           data-tag="Spring"
+           data-author="" >
+            <span class="post-title" title="Spring">Spring</span>
+            <span class="post-date" title="2019-09-26 21:24:47">2019/09/26</span>
+        </a>
         
         <a  class=""
            href="/2019/11/18/Linux命令/"
@@ -309,35 +327,11 @@
         </a>
         
         <a  class=""
-           href="/2019/09/26/Spring Date/"
-           data-tag="Spring"
-           data-author="" >
-            <span class="post-title" title="Spring Data">Spring Data</span>
-            <span class="post-date" title="2019-09-26 21:23:27">2019/09/26</span>
-        </a>
-        
-        <a  class=""
            href="/2019/09/26/SpringCloud/"
            data-tag="Spring"
            data-author="" >
             <span class="post-title" title="Spring Cloud">Spring Cloud</span>
             <span class="post-date" title="2019-09-26 22:23:27">2019/09/26</span>
-        </a>
-        
-        <a  class=""
-           href="/2019/09/26/Spring/"
-           data-tag="Spring"
-           data-author="" >
-            <span class="post-title" title="Spring">Spring</span>
-            <span class="post-date" title="2019-09-26 21:24:47">2019/09/26</span>
-        </a>
-        
-        <a  class=""
-           href="/2019/09/26/Swagger/"
-           data-tag="Swagger"
-           data-author="" >
-            <span class="post-title" title="Swagger">Swagger</span>
-            <span class="post-date" title="2019-09-26 21:23:27">2019/09/26</span>
         </a>
         
         <a  class=""
@@ -349,43 +343,11 @@
         </a>
         
         <a  class=""
-           href="/2019/09/26/Web服务器与应用服务器/"
-           data-tag="服务器"
+           href="/2019/09/26/Swagger/"
+           data-tag="Swagger"
            data-author="" >
-            <span class="post-title" title="Web服务器于应用服务器">Web服务器于应用服务器</span>
+            <span class="post-title" title="Swagger">Swagger</span>
             <span class="post-date" title="2019-09-26 21:23:27">2019/09/26</span>
-        </a>
-        
-        <a  class=""
-           href="/2019/10/08/b/"
-           data-tag="服务器"
-           data-author="" >
-            <span class="post-title" title="Nginx">Nginx</span>
-            <span class="post-date" title="2019-10-08 10:34:02">2019/10/08</span>
-        </a>
-        
-        <a  class=""
-           href="/2019/09/26/a/"
-           data-tag="java基础"
-           data-author="" >
-            <span class="post-title" title="int和Integer的区别">int和Integer的区别</span>
-            <span class="post-date" title="2019-09-26 21:23:27">2019/09/26</span>
-        </a>
-        
-        <a  class=""
-           href="/2019/12/08/三范式/"
-           data-tag="数据库"
-           data-author="" >
-            <span class="post-title" title="三范式">三范式</span>
-            <span class="post-date" title="2019-12-08 19:27:07">2019/12/08</span>
-        </a>
-        
-        <a  class=""
-           href="/2019/09/19/hello-world/"
-           data-tag=""
-           data-author="" >
-            <span class="post-title" title="Hello World">Hello World</span>
-            <span class="post-date" title="2019-09-19 21:27:40">2019/09/19</span>
         </a>
         
         <a  class=""
@@ -397,11 +359,51 @@
         </a>
         
         <a  class=""
+           href="/2019/09/19/hello-world/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="Hello World">Hello World</span>
+            <span class="post-date" title="2019-09-19 21:27:40">2019/09/19</span>
+        </a>
+        
+        <a  class=""
+           href="/2019/09/26/a/"
+           data-tag="java基础"
+           data-author="" >
+            <span class="post-title" title="int和Integer的区别">int和Integer的区别</span>
+            <span class="post-date" title="2019-09-26 21:23:27">2019/09/26</span>
+        </a>
+        
+        <a  class=""
+           href="/2019/09/26/Web服务器与应用服务器/"
+           data-tag="服务器"
+           data-author="" >
+            <span class="post-title" title="Web服务器于应用服务器">Web服务器于应用服务器</span>
+            <span class="post-date" title="2019-09-26 21:23:27">2019/09/26</span>
+        </a>
+        
+        <a  class=""
            href="/2019/09/26/阿里云API调用/"
            data-tag="阿里云"
            data-author="" >
             <span class="post-title" title="阿里云API调用">阿里云API调用</span>
             <span class="post-date" title="2019-09-26 21:25:27">2019/09/26</span>
+        </a>
+        
+        <a  class=""
+           href="/2019/10/08/b/"
+           data-tag="服务器"
+           data-author="" >
+            <span class="post-title" title="Nginx">Nginx</span>
+            <span class="post-date" title="2019-10-08 10:34:02">2019/10/08</span>
+        </a>
+        
+        <a  class=""
+           href="/2019/12/08/三范式/"
+           data-tag="数据库"
+           data-author="" >
+            <span class="post-title" title="三范式">三范式</span>
+            <span class="post-date" title="2019-12-08 19:27:07">2019/12/08</span>
         </a>
         
     </nav>
@@ -606,7 +608,7 @@
     /*作者、标签的自动补全*/
     $(function () {
         $('.search').AutoComplete({
-            'data': ['#Linux','#Spring','#Swagger','#服务器','#java基础','#数据库','#镜像操作','#阿里云',],
+            'data': ['#Spring','#Linux','#Swagger','#镜像操作','#java基础','#服务器','#阿里云','#数据库',],
             'itemHeight': 20,
             'width': 418
         }).AutoComplete('show');
